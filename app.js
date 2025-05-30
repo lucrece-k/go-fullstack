@@ -1,6 +1,7 @@
 const express = require('express');
 
 const app = express();
+// permet à Express de récupérer les requêtes de type content-type et de mettre à disposition leur body
 app.use(express.json());
 //headers: middleware qui permet de désactiver les erreurs CORS en autorisant des requêtes cross-origin
 app.use((req, res, next) => {
